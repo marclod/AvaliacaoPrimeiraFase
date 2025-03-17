@@ -6,7 +6,7 @@ let tarefaSchema = new mongoose.Schema({
   concluida: Boolean,
   aluno: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: Aluno,
+    ref: "Aluno",
   },
   disciplinas: [{ type: mongoose.Schema.Types.ObjectId, ref: "Disciplina" }],
 });
